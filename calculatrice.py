@@ -48,7 +48,7 @@ print("\nBienvenue dans notre mini-calculatrice ! \nPressez 'a' pour l'addition,
 while True:
 
     # saisie qui fait référence au choix de l'utilisateur
-    choix=input("\nFaites le choix de votre opération : ")
+    choix=input("\nÀ présent, faites le choix de votre opération : ")
 
 
     # liste qui vérifie le choix de l'utilisateur
