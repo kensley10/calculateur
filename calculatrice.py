@@ -47,27 +47,31 @@ print("\nBienvenue dans notre mini-calculatrice ! \nPressez 'a' pour l'addition,
 
 while True:
 
+
     # saisie qui fait référence au choix de l'utilisateur
     choix=input("\nÀ présent, faites le choix de votre opération : ")
 
 
+    # Les nombres entrés par l'utilisateur
+    nbre1=int(input("\nLe premier : \n"))
+    nbre2=int(input("\nLe second : \n"))
+
+
     # liste qui vérifie le choix de l'utilisateur
     verificateur=["a","s","m","d","r","e","q"]
+
 
     # Une sorte d'alertement au cas où l'utilisateur ferait un mauvais choix
     while choix not in verificateur:
         print("\nErreur ! vous avez fait autrement.")
         choix=input("\nr Réessayez, S.V.P évitez de faire des choix qui sont hors de la liste ci-pécédente  : ")
 
+
     # option qui permet à l'utilisateur d'abandonner le programme
     if choix == "q":
         print("\nAu revoir !")
         break
 
-
-    # Les nombres entrés par l'utilisateur
-    nbre1=int(input("\nLe premier : \n"))
-    nbre2=int(input("\nLe second : \n"))
 
     
     # Les calculs selon le choix de l'utilisateur
@@ -81,5 +85,6 @@ while True:
         print(division()) 
     elif choix == "r":
         print(modulo())
-    elif choix == "e":
-        print(exposant())                                 
+    else:
+        if choix=="e":
+            print(exposant())                           
